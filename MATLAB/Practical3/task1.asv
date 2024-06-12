@@ -1,0 +1,6 @@
+filename = "viptraffic.avi";
+filename2 = "shopping_center.mpg";
+vid = VideoReader(filename);
+vidFrames = read(vid);
+size(vidFrames ...
+    )

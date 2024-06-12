@@ -1,0 +1,7 @@
+function Iout = enhanceBrightness(Iin,c)
+
+Lut = brightnessLUT(c);
+size(Lut)
+Iout = intlut(Iin,Lut);
+
+end

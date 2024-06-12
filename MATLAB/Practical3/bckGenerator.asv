@@ -1,0 +1,20 @@
+function [Bkg] = bckGenerator(videoStream, sampling)
+    buffer=[];
+    counter=0;
+    testStream = double(videoStream);
+    test
+    % testStream(:,:,:,120)
+    for t = 1:sampling:size(videoStream,4)
+        counter = counter +1;
+        frame = testStream(:,:,:,t);
+        rgb2gray(frame)
+        buffer(:,:,counter)= double(rgb2gray(frame));
+        pause(1)
+    end
+
+    % buffer = double(buffer);
+    buffer;
+    counter;
+    Bkg=buffer;
+    Bkg = median(buffer,3);
+end

@@ -1,0 +1,31 @@
+function Iout = myconvolution(Iin,B)
+
+Iin=double(Iin);
+B=double(B);
+
+%Task1 Step 5
+
+for row = 1:size(Iin, 1)
+    for col = 1:size(Iin, 2)
+        sum=0;
+        for mat_row = 1:size(B, 1)
+            for mat_col = 1:size(B, 2)
+                test_row = row+mat_row-1
+
+                sum += 
+            end
+        end
+    end
+end
+
+
+
+
+
+
+
+
+
+
+end
+ 

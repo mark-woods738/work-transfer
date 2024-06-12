@@ -1,0 +1,1 @@
+vid = VideoReader("shopping_center.mpg")
